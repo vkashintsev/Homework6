@@ -15,7 +15,7 @@ internal class Program
         {
             Console.WriteLine(task);
         }
-        Console.WriteLine($"Время: {stopWatch.ElapsedMilliseconds}");
+        Console.WriteLine($"Время: {stopWatch.ElapsedTicks}");
 
 
         Console.WriteLine("Написать функцию, принимающую в качестве аргумента путь к папке. Из этой папки параллельно прочитать все файлы и вычислить количество пробелов в них");
@@ -27,7 +27,7 @@ internal class Program
         {
             Console.WriteLine(task);
         }
-        Console.WriteLine($"Время: {stopWatch.ElapsedMilliseconds}");
+        Console.WriteLine($"Время: {stopWatch.ElapsedTicks}");
         Console.ReadKey(); 
     }
     private static int[] Task1(String fileName1, String fileName2, String fileName3)
